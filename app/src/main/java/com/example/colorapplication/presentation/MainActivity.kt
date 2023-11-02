@@ -1,8 +1,8 @@
 package com.example.colorapplication.presentation
 
 import android.content.Intent
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import androidx.appcompat.app.AppCompatActivity
 import com.example.colorapplication.databinding.ActivityMainBinding
 
 
