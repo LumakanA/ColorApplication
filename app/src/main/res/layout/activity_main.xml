@@ -7,7 +7,7 @@
     tools:context=".presentation.MainActivity">
 
     <com.google.android.material.button.MaterialButton
-        android:id="@+id/buttonRed"
+        android:id="@+id/redButton"
         android:layout_width="200dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="200dp"
@@ -17,23 +17,23 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <com.google.android.material.button.MaterialButton
-        android:id="@+id/buttonGreen"
+        android:id="@+id/greenButton"
         android:layout_width="200dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="50dp"
         android:text="@string/green_activity"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/buttonRed" />
+        app:layout_constraintTop_toBottomOf="@+id/redButton" />
 
     <com.google.android.material.button.MaterialButton
-        android:id="@+id/buttonBlue"
+        android:id="@+id/blueButton"
         android:layout_width="200dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="50dp"
         android:text="@string/blue_activity"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/buttonGreen" />
+        app:layout_constraintTop_toBottomOf="@+id/greenButton" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

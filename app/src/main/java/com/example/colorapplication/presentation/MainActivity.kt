@@ -13,19 +13,21 @@ class MainActivity : AppCompatActivity() {
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
-        binding.buttonRed.setOnClickListener {
-            val intent = Intent(this, RedActivity::class.java)
-            startActivity(intent)
+        binding.redButton.setOnClickListener {
+            startNewActivity(RedActivity::class.java)
         }
 
-        binding.buttonGreen.setOnClickListener {
-            val intent = Intent(this, GreenActivity::class.java)
-            startActivity(intent)
+        binding.greenButton.setOnClickListener {
+            startNewActivity(GreenActivity::class.java)
         }
 
-        binding.buttonBlue.setOnClickListener {
-            val intent = Intent(this, BlueActivity::class.java)
-            startActivity(intent)
+        binding.blueButton.setOnClickListener {
+            startNewActivity(BlueActivity::class.java)
         }
+    }
+
+    private fun startNewActivity(cls: Class<*>) {
+        val intent = Intent(this, cls)
+        startActivity(intent)
     }
 }
